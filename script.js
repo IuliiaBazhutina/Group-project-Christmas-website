@@ -33,3 +33,7 @@ function showPosition(position) {
     const locationElement = document.getElementById("location");
     locationElement.innerHTML = `Latitude: ${position.coords.latitude}<br>Longitude: ${position.coords.longitude}`;
 }
+
+//LOCATION OF THE NORTH POLE
+const northpoleLat = 90;
+const northpoleLong = 0.0002;
