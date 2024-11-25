@@ -13,7 +13,7 @@ header {
 
 img {
     /* width: fit-content; */
-    width: 90%;
+    width: 100%;
     height: auto;
 }
 
@@ -29,8 +29,24 @@ img {
 
 #div-container {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     width: 100%;
+}
+
+#div-column1, #div-column2 {
+    padding: 8px;
+}
+
+#div-select {
+    display: grid;
+    grid-template-columns: auto 1fr auto 1fr;
+    /* vertical-align: middle; */
+}
+
+#div-buttons {
+    display:flex;
+    justify-content: center;
+    gap: 40px;
 }
 
 form {
@@ -42,14 +58,16 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-form label {
-    display: block;
+label {
+    padding: 8px;
+    margin: 5px;
+    text-align:left;
 }
 
 input,
 textarea,
 select {
-    width: auto;
+    width: 100%;
     padding: 8px;
     margin: 5px 0;
     border: 1px solid #ddd;
@@ -57,6 +75,10 @@ select {
     font-family: Arial;
   }
 
+  button {
+    width: 150px;
+    height: 40px;
+  }
 
 @media only screen and (max-width: 600px) {
     .page1 {
