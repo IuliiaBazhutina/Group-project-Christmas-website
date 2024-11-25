@@ -60,7 +60,6 @@ nav ul li a:hover {
 #div-select {
     display: grid;
     grid-template-columns: auto 1fr auto 1fr;
-    /* vertical-align: middle; */
 }
 
 #div-buttons {
