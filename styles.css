@@ -14,6 +14,32 @@ img {
     height: auto;
 }
 
+form {
+    background-color: #dad6d6;
+    padding: 10pt;
+    border: 1px, solid #ddd;
+    border-radius: 5px;
+    width: 95%;
+    margin: 20px auto;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    font-family: Arial;
+    font-size: medium;
+}
 
 .footer {
     border-top: 4px solid red;
