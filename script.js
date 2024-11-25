@@ -12,7 +12,15 @@ let messages = [
     "Tinsel was invented in 1610 in Germany and was once made of real silver."
 ];
 
-//////////ADD FUNCTION HERE TO CYCLE THROUGH MESSAGES ON HOME PAGE
+//CODE TO OUTPUT ALL MESSAGES ONE BY ONE ON BUTTON CLICK
+let msgIndex = 0;
+const cycleMsg = document.getElementById("factBut");
+const msgOutput = document.getElementById("message");
+cycleMsg.addEventListener("click", function () {
+    msgOutput.textContent = messages[msgIndex];
+    msgIndex++;
+});
+
 
 //GET LOCATION FOR HOMEPAGE
 const locationButton = document.getElementById("button2");
@@ -28,12 +36,6 @@ function getLocation() {
         locationElement.innerHTML = "Geolocation is not supported by this browser.";
     }
 }
-
-//NO LONGER NEEDED AS PER FUNCTION BELOW
-// function showPosition(position) {
-//     const locationElement = document.getElementById("location");
-//     locationElement.innerHTML = `Latitude: ${position.coords.latitude}<br>Longitude: ${position.coords.longitude}`;
-// }
 
 //LOCATION OF THE NORTH POLE
 const northpoleLat = 90;
