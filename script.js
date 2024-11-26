@@ -24,7 +24,9 @@ let messages = [
     "America’s first batch of eggnog was made in the Jamestown settlement in 1607",
     "Some zoos take donated Christmas trees and use them as food for the animals",
     "In 1918, the city of Boston received a giant Christmas tree as a gift from the Canadian province of Nova Scotia",
-    "Tinsel was invented in 1610 in Germany and was once made of real silver."
+    "Tinsel was invented in 1610 in Germany and was once made of real silver.",
+    "Christmas might be a public holiday; however, it is not a biblical holy day. The Bible does not say anywhere to keep Christmas as a holy day.",
+    "The ‘X’ in X-Mas, as we all use today, comes from the Greek meaning of ‘X’ i.e. Christ."
 ];
 
 //CODE TO OUTPUT ALL MESSAGES ONE BY ONE ON BUTTON CLICK
