@@ -11,13 +11,15 @@
 
 <body>
     <header>
-        <h1>Christmas recipes</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="page3.html">My recipes</a></li>
-            </ul>
-        </nav>
+            <div class="Merry X-Mas!">
+            <h1>Christmas recipes</h1>
+        </div>
+
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <a href="./index.html">Home</a>
+            <a href="./page3.html">My recipes</a>
+        </div>
     </header>
 
     <main>
@@ -29,8 +31,11 @@
                     <div id="div-select">
                         <!-- Choose category -->
                         <label for="select-category">Choose category:</label>
-                        <select class="select" id="select-category">
-                            <option value="selected" selected="selected">Select category</option>
+                                <select class="select" id="select-category">
+                                <option value="0" selected="selected">Select category</option>
+                                <option value="1">Drinks</option>
+                                <option value="2">Cookies</option>
+                                <option value="3">Snacks</option>
                         </select>
 
                         <!-- Choose recipe -->
