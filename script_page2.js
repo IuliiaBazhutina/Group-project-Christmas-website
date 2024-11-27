@@ -108,3 +108,20 @@ function createDropdownMenu(recipes, category) {
     }
   })
 }
+
+
+// function adds a new target option in dropdown list with passed value
+
+function addTargetOption(name) {
+
+  const SelectCategory = document.getElementById("select-recipe");
+
+  // create a new target option
+  var newName = document.createElement('option');
+
+  // pass value to the new option
+  newName.innerHTML = `${name}`;
+
+  //place the new option in the Select
+  SelectCategory.appendChild(newName);
+}
