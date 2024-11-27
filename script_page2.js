@@ -75,3 +75,36 @@ const recipesJSON = [{
   
   const stringJSON = JSON.stringify(recipesJSON)
   const recipes = JSON.parse(stringJSON);
+
+  // 2. Once recipe category is selected on page 2 call function createDropdownMenu  
+
+const selectCategory = document.getElementById("select-category");
+
+selectCategory.addEventListener("change", function () {
+  // get selected category
+  const selectedCategory = selectCategory.options[selectCategory.selectedIndex].text;
+  // call function createDropdownMenupass with 2 parameters: array recipes and string selected category
+  createDropdownMenu(recipes, selectedCategory);
+});
+
+
+
+// function selects recipes of passed category and create a new dropdown menu with recipes' names
+
+function createDropdownMenu(recipes, category) {
+
+  // remove target options in select-recipes (clear dropdown list)
+  clearDropdownMenu();
+
+  // add the first option with the name of category in a new list
+  addTargetOption(`Choose ${category}`);
+
+  // select recipes by the category and passes them to function addTargetOption (function add new target option in the drop-down list)
+  recipes.forEach(recipe => {
+    if (recipe.category === category) {
+
+      // pass recipe name as a parameter to addTargetOption (creates new target option)
+      addTargetOption(recipe.name);
+    }
+  })
+}
