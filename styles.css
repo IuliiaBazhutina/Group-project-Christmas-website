@@ -13,7 +13,14 @@ header{
 .Calender {
   width: 100%;
   height: auto;
-  padding: 20px;
+  padding: 20px 40px; 
+  margin: 10px;
+}
+
+.TipofDay {
+  width: 100%;
+  height: auto;
+  padding: 20px 40px;
   margin: 10px;
 }
 
@@ -22,13 +29,12 @@ header{
   font-size:larger;
 }
 
+#countdown-image, #tipofday-image {
+  height: 200px;
+}
 
-.TipOfDay {
-  width: 100%;
-  height: auto;
-  padding: 20px;
-  margin: 10px;
-} 
+
+
 
 /* * {
   box-sizing: border-box;
@@ -54,6 +60,8 @@ body {
 .navbar {
   display: flex;
   background-color: #e01e1e;
+  justify-content: center;
+  gap: 40px;
 }
 
 /* Style the navigation bar links */
