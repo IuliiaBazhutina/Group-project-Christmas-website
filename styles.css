@@ -64,9 +64,15 @@ body {
 
 /* Footer */
 .footer {
-  padding: 3px;
+  padding: 10px;
   text-align: center;
+  font-weight: 500;
   background: #e01e1e;
+  color: #404040;
+  background-image: url(headerfooter1.jpg);
+  background-size: cover;
+  background-position: center center;
+  /* background-attachment: fixed; */
 }
 
 /* Styles Page 2 */
