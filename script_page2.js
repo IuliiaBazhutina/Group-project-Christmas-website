@@ -162,3 +162,25 @@ function displayRecipeInForm(recipeName) {
     recipeTextarea.value = recipe.recipe;
   }
 }
+
+//added the local storage for saving recipes
+
+const saveButton = document.getElementById("save-btn");
+
+saveButton.addEventListener("click", function(){
+  const recipeName = document.getElementById("title").value;
+  const recipeSteps = document.getElementById("recipe").value;
+
+  const newRecipe = {
+    category: selectCategory.options[selectCategory.selectedIndex].text,
+    name: recipeName,
+    recipe: recipeSteps
+};
+
+const savedRecipes = JSON.parse(localStorage.getItem("savedRecipes")) || [];
+
+savedRecipes.push(newRecipe);
+
+localStorage.setItem("savedRecipes", JSON.stringify(savedRecipes));
+alert("Recipe saved!");
+});
