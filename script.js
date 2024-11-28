@@ -71,3 +71,10 @@ function showPosition(position) {
 
     locationElement.innerHTML = `Your distance from the North Pole is: ${distancetoNP.toFixed(3)} kilometers!`;
 }
+
+//DISPLAY TODAYS DATE
+function displayDate() {
+    let today = new Date();
+    document.getElementById("dateTime").textContent = "Today is " + today.toDateString();
+}
+displayDate();
