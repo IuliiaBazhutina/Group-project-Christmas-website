@@ -164,9 +164,19 @@ select {
 
 button {
   width: 150px;
-  height: 40px;
+  height: 50px;
+  transition: 0.5s;
+  background-color: #c50606;
+  color: white;
+  font-size: 14px;
+  border-radius: 50px;
+  cursor: pointer;
 }
 
+button:hover {
+  background-color: #008800;
+  transform: scale(1.05);
+}
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
   .row,

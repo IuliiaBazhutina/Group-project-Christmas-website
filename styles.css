@@ -109,9 +109,21 @@ select {
   height: auto;
 }
 
+/* BUTTON STLYINGS */
 button {
   width: 150px;
-  height: 40px;
+  height: 50px;
+  background-color: #c50606;
+  color: white;
+  font-size: 14px;
+  transition: 0.5s;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #008800;
+  transform: scale(1.05);
 }
 
 /* Responsive layout */
