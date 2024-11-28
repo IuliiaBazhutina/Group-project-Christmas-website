@@ -13,7 +13,7 @@ var x = setInterval(function () {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     document.getElementById("countdown").innerHTML = days + " Days " + hours + " Hours "
-        + minutes + " Minutes " + seconds + " Seconds, Until CHRISTMAS! ";
+        + minutes + " Minutes " + seconds + " Seconds ";
 }, 1000);
 
 //https://thefactfile.org/interesting-facts-christmas/
