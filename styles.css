@@ -10,18 +10,16 @@ header{
   height: 100%;
 }
 
-.Calender {
+.Calender, .TipofDay, .Recipes, .Location  {
   width: 100%;
   height: auto;
   padding: 20px 40px; 
   margin: 10px;
+  display: block;
 }
 
-.TipofDay {
-  width: 100%;
-  height: auto;
-  padding: 20px 40px;
-  margin: 10px;
+button {
+  display: block;
 }
 
 #countdown {
@@ -29,7 +27,7 @@ header{
   font-size:larger;
 }
 
-#countdown-image, #tipofday-image {
+#countdown-image, #tipofday-image, #recipe-image, #location-image {
   height: 200px;
 }
 

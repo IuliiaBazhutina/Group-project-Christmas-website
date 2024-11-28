@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christmas Recipes</title>
+    <title>Christmas website</title>
 
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
@@ -14,94 +14,98 @@
 <body>
     <!-- Note -->
     <!-- <image src="https://clipart-library.com/newimages/christmas-images-39.png" style="width:fit-content;" > -->
-        <header>
-                  <h1>CHRISTMAS WEBSITE</h1>
-           
-          <!-- Navigation Bar -->
+    <header>
+        <h1>CHRISTMAS WEBSITE</h1>
+
+        <!-- Navigation Bar -->
         <div class="navbar">
             <a href="#">Home</a>
             <a href="./page2.html">Recipes</a>
             <!-- <a href="#">reviews</a>
             <a href="#">about</a> -->
         </div>
-</header>
+    </header>
 
 
 
 
 
-        <div class="page1">
+    <div class="page1">
 
-            <!--Count-down calender-->
-            <div class="Calender">
-                <h2>Christmas countdown calendar</h2>
+        <!--Count-down calender-->
+        <div class="Calender">
+            <h2>Christmas countdown calendar</h2>
 
-                <p id="countdown">  </p>
-                <p>Until CHRISTMAS December 25, 2024</p>
-                
-                <img id ='countdown-image' src="https://img.freepik.com/premium-vector/christmas-progress-bar-with-inscription-christmas-loading-sketch-vector-illustration-design_785169-17.jpg?w=1060">
+            <p id="countdown"> </p>
+            <p>Until CHRISTMAS December 25, 2024</p>
 
-                <!-- <p>How Long until Christmas</p> -->
-                <!-- <h2>Christmas Count Down Calendar</h2> -->
-                <!-- <h5>Today is 11/21/2024</h5> -->
-                    <!-- <p>Let's Count together...</p>
+            <img id='countdown-image'
+                src="https://img.freepik.com/premium-vector/christmas-progress-bar-with-inscription-christmas-loading-sketch-vector-illustration-design_785169-17.jpg?w=1060">
+
+            <!-- <p>How Long until Christmas</p> -->
+            <!-- <h2>Christmas Count Down Calendar</h2> -->
+            <!-- <h5>Today is 11/21/2024</h5> -->
+            <!-- <p>Let's Count together...</p>
                         <p>We wish you a Merry Christmas
                         We wish you a Merry Christmas
                         We wish you a Merry Christmas
                         And a Happy New Year!</p> -->
-            </div>
+        </div>
 
 
 
 
-            <!--The tip of the day-->
-            <div class="TipofDay">
-                <h2> Christmas fact of the day</h2>
-                <!-- <h1>Fun facts!</h1> -->
-                <!-- <button id="factBut">Find Out More!</button> -->
-                <p id="message">Coca-Cola was the first company that used Santa Claus during the winter season for
-                    promotion.</p>
-                <image id='tipofday-image' src="https://wallpapers.com/images/high/the-grinch-stealing-ozhkmi0cqu4lj32a.webp">
-                    <!-- <p>Don't let the Grinch Steal Your Presents
+        <!--The tip of the day-->
+        <div class="TipofDay">
+            <h2> Christmas fact of the day</h2>
+            <!-- <h1>Fun facts!</h1> -->
+            <!-- <button id="factBut">Find Out More!</button> -->
+            <p id="message">Coca-Cola was the first company that used Santa Claus during the winter season for
+                promotion.</p>
+            <image id='tipofday-image'
+                src="https://wallpapers.com/images/high/the-grinch-stealing-ozhkmi0cqu4lj32a.webp">
+                <!-- <p>Don't let the Grinch Steal Your Presents
                         This Christmas!..</p>
                     <h3>More Text</h3> -->
 
                 <!-- <p>Instruction on how to build a snowman</p>       
                 <img src="https://th.bing.com/th/id/OIP.Okc4z1WEIDbhW4SD8haZAAHaEK?rs=1&pid=ImgDetMain" alt="Snowman holding a broom"> -->
-            </div>
+        </div>
 
 
 
 
-            <!--Link to recipes-->
-            <div class="Recipes">
-                <h1>Our Christmas Themed Recipes!</h1>
-                <p>Do you want to cook something festive?</p>
-                <img src="https://i.pinimg.com/originals/73/d6/bd/73d6bd6acf1314093e03cedba2567bc7.jpg" alt="Sometype of desert">
-                <br>
-                <button id="button1">Find Our Recipes</button>  <!--It will be linked once page 2 has been created-->
-            </div>
+        <!--Link to recipes-->
+        <div class="Recipes">
+            <h2>Our Christmas recipes</h2>
+            <p>Do you want to cook something festive?</p>
+
+            <img id='recipe-image'
+                src="https://images.pexels.com/photos/6061743/pexels-photo-6061743.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Sometype of desert">
+            <button id="button1">Find Our Recipes</button>
+        </div>
 
 
 
 
-                    <!--G.P.S Location-->
-        <div class="location">
-            <h1>How Far Are You From The North Pole?</h1>
-            <p>Let's Find Santa</p>
-            <img src="https://play-lh.googleusercontent.com/7bYTP2VFFZlcmxBhA252OqX1J9wM5TE8NMop-_1-mB3d579epV6fAMkGsLlTPEdEKAY"
-                style="height:200px;">
+        <!--G.P.S Location-->
+        <div class="Location">
+            <h2>How Far Are You From The North Pole?</h2>
+            <p id="location">Let's Find Santa</p>
 
-            <br>
-            <button id="button2">Find Out </button>
-            <p id="location">Your location will appear here.</p>
+            <img id='location-image'
+                src="https://play-lh.googleusercontent.com/7bYTP2VFFZlcmxBhA252OqX1J9wM5TE8NMop-_1-mB3d579epV6fAMkGsLlTPEdEKAY">
+            <button id="button2" onclick="getLocation()">Find Out</button>
 
-            <!-- <p>To find out exactly how far, click the link below to find out</p>
-            <img src="https://th.bing.com/th/id/OIP.TU6orjoZiBKkaigjJu5mXwHaFu?rs=1&pid=ImgDetMain" alt="The north pole">
-            <br>
-            <button id="button2" onclick="getLocation()">Find Out </button>  -->
         </div>
     </div>
+    <!-- <p id="location">Your location will appear here.</p> -->
+
+    <!-- <p>To find out exactly how far, click the link below to find out</p>
+            <img src="https://th.bing.com/th/id/OIP.TU6orjoZiBKkaigjJu5mXwHaFu?rs=1&pid=ImgDetMain" alt="The north pole">
+            <br>
+            
 
 
 
@@ -109,7 +113,8 @@
 
 
 
-        <!-- The flexible grid (content)
+
+        <The flexible grid (content)
         <div class="row">
             <div class="side">
                 <div class="factOfDay">
@@ -148,12 +153,13 @@
                                         And a Happy New Year!</p>
                         </div>
                 </div> -->
-                <!-- Footer -->
-                <div class="footer">
-                    <h2>Footer</h2>
+    <!-- Footer -->
 
-                </div>
 
-                <body>
+    <footer class="footer">
+        <p>Merry Christmas & Happy Hoildays! Cherish and Enjoy this season with your loved ones.</p>
+    </footer>
+
+    <body>
 
 </html>
