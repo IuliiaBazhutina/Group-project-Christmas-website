@@ -177,6 +177,11 @@ saveButton.addEventListener("click", function(){
     recipe: recipeSteps
 };
 
+if (!recipeName || !recipeSteps) {
+  alert("Please fill in all fields before saving.");
+  return;
+}
+
 const savedRecipes = JSON.parse(localStorage.getItem("savedRecipes")) || [];
 
 savedRecipes.push(newRecipe);
