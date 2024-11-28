@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  background: #b30404;
+  color: white;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #e01e1e;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: #e01e1e;
+}
+
+/* Styles Page 2 */
+#div-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  width: 100%;
+  max-width: 100%;
+}
+
+#div-column1,
+#div-column2 {
+  padding: 8px;
+  max-width: 100%;
+}
+
+form {
+  width: 100%;
+  max-width: 1200px;
+  padding: 10pt;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  max-width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  font-family: Arial;
+}
+
+#image-recipe {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  width: 150px;
+  height: 40px;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 700px) {
+  .row,
+  .navbar {
+    flex-direction: column;
+  }
+}
