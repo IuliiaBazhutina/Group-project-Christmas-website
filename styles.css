@@ -8,7 +8,7 @@ body {
 
 header {
   text-align: center;
-  /* border-bottom: 4px solid red; */
+  border-bottom: 4px solid rgb(251, 118, 118);
   color: red;
   margin: 0 0 10px 0;
   padding-top: 10px;
@@ -81,13 +81,17 @@ button {
   width: 150px;
   height: 40px;
   background-color: rgb(138, 223, 138);
-  border-radius: 5px;
-  border: none;
+  color: #000;
   margin: 20px auto 10px;
+  transition: 0.5s;
+  font-size: 14px;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: rgb(138, 223, 138);
 }
-
 button:hover {
-  background-color: antiquewhite;
+  background-color: rgb(0, 167, 0);
+  transform: scale(1.05);
   cursor: pointer;
 }
 

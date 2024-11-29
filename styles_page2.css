@@ -1,7 +1,12 @@
+* {
+  box-sizing: border-box;
+  font-family: cursive;
+}
 .header,
 .navbar a {
-  color: #404040;
+  color: #ffffff;
   text-align: center;
+  text-decoration: none;
 }
 .footer,
 .header,
@@ -10,7 +15,6 @@ h1 {
   text-align: center;
 }
 
-.navbar a,
 nav ul li a:hover {
   text-decoration: underline;
 }
@@ -24,10 +28,6 @@ nav ul li a:hover {
 label {
   padding: 8px;
   color: #000;
-}
-* {
-  box-sizing: border-box;
-  font-family: Arial;
 }
 body {
   background-color: bisque;
@@ -88,7 +88,7 @@ body {
   font-weight: 500;
   background: url("https://i.ibb.co/8rkK4qM/headerfooter1.jpg") center
     center/cover #e01e1e;
-  color: #404040;
+  color: #ffffff;
 }
 nav ul {
   list-style: none;
@@ -150,10 +150,12 @@ button {
   font-size: 14px;
   border-radius: 50px;
   cursor: pointer;
+  background-color: rgb(138, 223, 138);
 }
 button:hover {
-  background-color: #080;
+  background-color: rgb(1, 150, 1);
   transform: scale(1.05);
+  cursor: pointer;
 }
 
 @media screen and (max-width: 700px) {
