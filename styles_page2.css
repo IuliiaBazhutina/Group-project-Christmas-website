@@ -9,6 +9,7 @@
 h1 {
   text-align: center;
 }
+
 .navbar a,
 nav ul li a:hover {
   text-decoration: underline;
@@ -28,17 +29,14 @@ label {
   font-family: Arial;
 }
 body {
-  background-image: url("page2BG.jpg");
+  background-color: bisque;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
   font-family: cursive;
   margin: 0;
   padding: 0;
-  color: #000;
-}
-h1 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #ff0000;
 }
 .header {
   padding: 30px;
@@ -51,9 +49,14 @@ h1 {
 .side {
   padding: 20px;
 }
-.navbar,
-button {
-  background-color: #f67777;
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #e01e1e;
+}
+
+.navbar button {
+  background: #e01e1e;
 }
 .navbar a {
   padding: 14px 20px;
