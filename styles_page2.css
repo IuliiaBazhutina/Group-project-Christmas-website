@@ -1,6 +1,6 @@
 .header,
 .navbar a {
-  color: #fff;
+  color: #404040;
   text-align: center;
 }
 .footer,
@@ -23,6 +23,7 @@ nav ul li a:hover {
 #div-column2,
 label {
   padding: 8px;
+  color: #000;
 }
 * {
   box-sizing: border-box;
@@ -53,6 +54,7 @@ body {
   display: flex;
   justify-content: center;
   background-color: #e01e1e;
+  background: url(headerfooter1.jpg) center center/cover #e01e1e;
 }
 
 .navbar button {
@@ -151,9 +153,23 @@ button:hover {
   background-color: #080;
   transform: scale(1.05);
 }
+
 @media screen and (max-width: 700px) {
-  .navbar,
-  .row {
-    flex-direction: column;
+  h1 {
+    font-size: 1.5rem;
+  }
+  .footer {
+    padding: 5px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+
+  label,
+  input,
+  select,
+  textarea {
+    font-size: 14px;
   }
 }
