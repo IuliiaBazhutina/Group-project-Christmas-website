@@ -184,6 +184,8 @@ const saveButton = document.getElementById("save-btn");
 saveButton.addEventListener("click", function(){
   const recipeName = document.getElementById("title").value;
   const recipeSteps = document.getElementById("recipe").value;
+  const recipeImage = document.getElementById("image-recipe").src;
+  const recipeAlt = document.getElementById("image-recipe").alt;
 
   const newRecipe = {
     category: selectCategory.options[selectCategory.selectedIndex].text,
