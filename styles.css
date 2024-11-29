@@ -1,27 +1,31 @@
-* {
-  box-sizing: border-box;
-}
 /* Style the body */
 body {
   font-family: cursive;
-
   margin: 0;
+  background-color: bisque;
+  padding: 0;
 }
 
-/* Header/logo Title */
-.header {
-  padding: 30px;
+header {
   text-align: center;
-  text-decoration-line: underline;
-  text-decoration-style: wavy;
-  background: #b30404;
-  color: white;
+  /* border-bottom: 4px solid red; */
+  color: red;
+  margin: 0 0 10px 0;
+  padding-top: 10px;
+  display: block;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px;
 }
 
 /* Style the top navigation bar */
 .navbar {
   display: flex;
   background-color: #e01e1e;
+  justify-content: center;
+  gap: 40px;
 }
 
 /* Style the navigation bar links */
@@ -38,62 +42,71 @@ body {
   color: black;
 }
 
-/* Column container */
-.row {
-  display: flex;
-  flex-wrap: wrap;
+.page1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
 }
 
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-  flex: 30%;
-  background-color: #f1f1f1;
-  padding: 20px;
-}
-
-/* Main column */
-.main {
-  flex: 70%;
+.Calender,
+.Recipes {
+  width: 400px;
+  height: auto;
+  padding: 20px 40px;
+  margin: 10px 10px 10px auto;
+  display: block;
   background-color: white;
-  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 8px;
 }
 
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
+.TipofDay,
+.Location {
+  width: 400px;
+  height: auto;
+  padding: 20px 40px;
+  margin: 10px auto 10px 10px;
+  display: block;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 8px;
+}
+
+button {
+  display: block;
+  width: 150px;
+  height: 40px;
+  background-color: rgb(138, 223, 138);
+  border-radius: 5px;
+  border: none;
+  margin: 20px auto 10px;
+}
+
+#countdown {
+  color: #e01e1e;
+  font-size: larger;
+}
+
+#countdown-image,
+#tipofday-image,
+#recipe-image,
+#location-image {
+  height: 200px;
+  border-radius: 5px;
 }
 
 /* Footer */
 .footer {
   padding: 10px;
+  margin: 10px 0 0 0;
   text-align: center;
   background: #e01e1e;
+  color: white;
 }
 
 /* Styles Page 2 */
-
-nav ul {
-  list-style: none;
-  padding: 0 10px;
-}
-
-nav ul li {
-  display: inline;
-  margin: 0 20px;
-}
-
-nav ul li a {
-  color: black;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-}
 
 #div-container {
   display: grid;
@@ -101,7 +114,8 @@ nav ul li a:hover {
   width: 100%;
 }
 
-#div-column1, #div-column2 {
+#div-column1,
+#div-column2 {
   padding: 8px;
 }
 
@@ -111,7 +125,7 @@ nav ul li a:hover {
 }
 
 #div-buttons {
-  display:flex;
+  display: flex;
   justify-content: center;
   gap: 40px;
 }
@@ -122,13 +136,14 @@ form {
   margin: 20px auto;
   border: 1px, solid #ddd;
   border-radius: 5px;
+  background-color: whitesmoke;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 label {
   padding: 8px;
   margin: 5px;
-  text-align:left;
+  text-align: left;
 }
 
 input,
@@ -147,15 +162,17 @@ select {
   height: auto;
 }
 
-button {
-  width: 150px;
-  height: 40px;
-}
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
   .row,
   .navbar {
     flex-direction: column;
+  }
+
+  .page1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
   }
 }

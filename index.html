@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christmas Recipes</title>
+    <title>Christmas website</title>
 
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
@@ -12,67 +12,76 @@
 </head>
 
 <body>
-    <!-- Note -->
-    <image src="https://clipart-library.com/newimages/christmas-images-39.png" style="width:fit-content;" <!-- Header
-        -->
-        <div class="Merry X-Mas!">
-            <h1>Merry X-Mas!</h1>
-            <p>With a <b>flexible</b> layout.</p>
-        </div>
+
+    <header>
+        <h1>CHRISTMAS WEBSITE</h1>
 
         <!-- Navigation Bar -->
         <div class="navbar">
-            <a href="#">home</a>
+            <a href="#">Home</a>
             <a href="./page2.html">Recipes</a>
-            <a href="#">reviews</a>
-            <a href="#">about</a>
+        </div>
+    </header>
+
+
+    <div class="page1">
+
+        <!--Count-down calender-->
+        <div class="Calender">
+            <h2>Christmas countdown calendar</h2>
+
+            <p id="countdown"> </p>
+            <p>Until CHRISTMAS December 25, 2024</p>
+
+            <img id='countdown-image'
+                src="https://img.freepik.com/premium-vector/christmas-progress-bar-with-inscription-christmas-loading-sketch-vector-illustration-design_785169-17.jpg?w=1060">
+
         </div>
 
-        <!-- The flexible grid (content) -->
-        <div class="row">
-            <div class="side">
-                <div class="factOfDay">
-                    <h1>Fun facts!</h1>
-                    <button id="factBut">Find Out More!</button> <!--Will be created within JavaScript-->
-                    <p id="message">Coca-Cola was the first company that used Santa Claus during the winter season for
-                        promotion.</p>
-                    <image src="https://wallpapers.com/images/high/the-grinch-stealing-ozhkmi0cqu4lj32a.webp"
-                        style="height:200px;">
-                        <p>Don't let the Grinch Steal Your Presents
-                            This Christmas!..</p>
-                        <h3>More Text</h3>
-                        <p>Let's Find Santa</p>
-                        <img src="https://play-lh.googleusercontent.com/7bYTP2VFFZlcmxBhA252OqX1J9wM5TE8NMop-_1-mB3d579epV6fAMkGsLlTPEdEKAY"
-                            style="height:200px;">
 
-                        <br>
-                        <button id="button2">Find Out </button>
-                        <p id="location">Your location will appear here.</p>
-                        <div class="main">
-                            <h2>Christmas Cookies</h2>
-                            <h5>Let's make cookies together </h5>
-                            <image src="https://clipart-library.com/2023/ce9beff291ad6800202be28f515b4b88.jpg"
-                                style="height:200px;">
-                                <p>We get some littl ginger bread Helpers <br>
-                                <h2>Christmas Count Down Calendar</h2>
-                                <h5>Today is 11/21/2024</h5>
-                                <image
-                                    src="https://img.freepik.com/premium-vector/christmas-progress-bar-with-inscription-christmas-loading-sketch-vector-illustration-design_785169-17.jpg?w=1060 "
-                                    style="height:200px;">
-                                    <p>Let's Count together...</p>
-                                    <p id="countdown"></p>
-                                    <p>We wish you a Merry Christmas
-                                        We wish you a Merry Christmas
-                                        We wish you a Merry Christmas
-                                        And a Happy New Year!</p>
-                        </div>
-                </div>
-                <!-- Footer -->
-                <div class="footer">
-                    <h2>Footer</h2>
+        <!--The tip of the day-->
+        <div class="TipofDay">
+            <h2> Christmas fact of the day</h2>
 
-                </div>
+            <p id="message">Coca-Cola was the first company that used Santa Claus during the winter season for
+                promotion.</p>
+            <image id='tipofday-image'
+                src="https://wallpapers.com/images/high/the-grinch-stealing-ozhkmi0cqu4lj32a.webp">
 
-                <body>
+        </div>
+
+
+        <!--Link to recipes-->
+        <div class="Recipes">
+            <h2>Our Christmas recipes</h2>
+
+            <p>Do you want to cook something festive?</p>
+
+            <img id='recipe-image' src="https://clipart-library.com/2023/ce9beff291ad6800202be28f515b4b88.jpg"
+                alt="Sometype of desert">
+            <button id="button1">Find Our Recipes</button>
+        </div>
+
+
+        <!--G.P.S Location-->
+        <div class="Location">
+            <h2>How Far Are You From The North Pole?</h2>
+            <p id="location">Let's Find Santa</p>
+
+            <img id='location-image'
+                src="https://play-lh.googleusercontent.com/7bYTP2VFFZlcmxBhA252OqX1J9wM5TE8NMop-_1-mB3d579epV6fAMkGsLlTPEdEKAY">
+            <button id="button2" onclick="getLocation()">Find Out</button>
+
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Merry Christmas and Happy Hoildays!<br>&copy; 2024 Group 10</p>
+        <p> </p>
+    </footer>
+
+    <body>
 
 </html>
