@@ -8,6 +8,10 @@
   text-align: center;
   text-decoration: none;
 }
+
+header {
+  border-bottom: 4px solid rgb(251, 118, 118);
+}
 .footer,
 .header,
 .navbar a,
