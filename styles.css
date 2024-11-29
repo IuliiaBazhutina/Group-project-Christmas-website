@@ -26,7 +26,8 @@ h1 {
   background-color: #e01e1e;
   gap: 40px;
   justify-content: center;
-  background: url(headerfooter1.jpg) center center/cover #e01e1e;
+  background: url("https://i.ibb.co/8rkK4qM/headerfooter1.jpg") center
+    center/cover #e01e1e;
 }
 
 /* Style the navigation bar links */
@@ -111,7 +112,8 @@ button:hover {
   background: #e01e1e;
   color: white;
   font-weight: 500;
-  background: url(headerfooter1.jpg) center center/cover #e01e1e;
+  background: url("https://i.ibb.co/8rkK4qM/headerfooter1.jpg") center
+    center/cover #e01e1e;
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */

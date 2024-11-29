@@ -54,7 +54,8 @@ body {
   display: flex;
   justify-content: center;
   background-color: #e01e1e;
-  background: url(headerfooter1.jpg) center center/cover #e01e1e;
+  background: url("https://i.ibb.co/8rkK4qM/headerfooter1.jpg") center
+    center/cover #e01e1e;
 }
 
 .navbar button {
@@ -85,7 +86,8 @@ body {
 .footer {
   padding: 10px;
   font-weight: 500;
-  background: url(headerfooter1.jpg) center center/cover #e01e1e;
+  background: url("https://i.ibb.co/8rkK4qM/headerfooter1.jpg") center
+    center/cover #e01e1e;
   color: #404040;
 }
 nav ul {
