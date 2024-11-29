@@ -188,7 +188,9 @@ saveButton.addEventListener("click", function(){
   const newRecipe = {
     category: selectCategory.options[selectCategory.selectedIndex].text,
     name: recipeName,
-    recipe: recipeSteps
+    recipe: recipeSteps,
+    url: recipeImage,
+    alt: recipeAlt
 };
 
 if (!recipeName || !recipeSteps) {
