@@ -1,3 +1,4 @@
+//COUNTDOWN FUNCTION TO DISPLAY THE TIME UNTIL XMAS
 var countDownDate = new Date("December 25, 2024 00:00:00").getTime(),
     x = setInterval(function () {
         var e = new Date().getTime(),
@@ -12,6 +13,8 @@ var countDownDate = new Date("December 25, 2024 00:00:00").getTime(),
             Math.floor((t % 6e4) / 1e3) +
             " Seconds ";
     }, 1e3);
+
+//ARRAY OF MESSAGES FOR THE FACT OF THE DAY
 let messages = [
     "The image of Santa Claus flying in his sleigh first appeared in 1819",
     "The original Rudolph did not have a red nose",
@@ -28,6 +31,8 @@ const cycleMsg = document.getElementById("factBut"),
 cycleMsg.addEventListener("click", function () {
     (msgOutput.textContent = messages[msgIndex]), msgIndex++;
 });
+
+//BUTTON TO GET THE DISTANCE FROM USER TO THE NORTH POLE
 const locationButton = document.getElementById("button2");
 function getLocation() {
     let e = document.getElementById("location");
