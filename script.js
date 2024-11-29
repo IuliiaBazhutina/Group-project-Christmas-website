@@ -1,8 +1,4 @@
-
-// JS for Home Page
-
 //COUNTDOWN TIMER
-//https://www.w3schools.com/howto/howto_js_countdown.asp
 var countDownDate = new Date("December 25, 2024 00:00:00").getTime();
 var x = setInterval(function () {
     var now = new Date().getTime();
@@ -13,10 +9,10 @@ var x = setInterval(function () {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     document.getElementById("countdown").innerHTML = days + " Days " + hours + " Hours "
-        + minutes + " Minutes " + seconds + " Seconds, Until CHRISTMAS! ";
+        + minutes + " Minutes " + seconds + " Seconds ";
 }, 1000);
 
-//https://thefactfile.org/interesting-facts-christmas/
+//https://thefactfile.org/interesting-facts-christmas/ for more facts
 //ARRAY OF MESSAGES FOR HOMEPAGE
 let messages = [
     "The image of Santa Claus flying in his sleigh first appeared in 1819",
@@ -55,26 +51,14 @@ function getLocation() {
 }
 
 //LOCATION OF THE NORTH POLE
-const northpoleLat = 90;
-//LONGTITUDE NOT NEEDED FOR NORTHPOLE
-// const northpoleLong = 0.0002;
-
-
 //CALCULATION TO DETERMINE DISTANCE OF USER TO NORTH POLE
-const locationElement = document.getElementById("location");
-const kmPerDegree = 111.32; //Approx value
-
 function showPosition(position) {
+    const northpoleLat = 90;
+    const locationElement = document.getElementById("location");
+    const kmPerDegree = 111.32; //Approx value
     const userLat = position.coords.latitude;
     const latitudeDiff = northpoleLat - userLat;
     const distancetoNP = latitudeDiff * kmPerDegree;
 
     locationElement.innerHTML = `Your distance from the North Pole is: ${distancetoNP.toFixed(3)} kilometers!`;
 }
-
-//DISPLAY TODAYS DATE
-function displayDate() {
-    let today = new Date();
-    document.getElementById("dateTime").textContent = "Today is " + today.toDateString();
-}
-displayDate();
