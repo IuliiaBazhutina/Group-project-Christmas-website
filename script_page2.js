@@ -30,6 +30,7 @@ const recipesJSON = [{
 
 {
   "category": "Drink",
+
   "name": "Grinch Green Hot Chocolate",
   "recipe": "Melt white chocolate chips in a saucepan with milk and condense milk, stirring until smooth. Add green food coloring to achieve your desired shade. Pour into mugs and top with whipped cream and decorations if desired",
   "url": "https://onmykidsplate.com/wp-content/uploads/2023/10/Grinch-Hot-chocolate-18.jpg"
@@ -38,12 +39,14 @@ const recipesJSON = [{
 {
   "category": "Drink",
   "name": "Creamiest Christmas Eggnot",
+
   "recipe": "Simmer milk, sugar, baking soda, cinnamon, cloves, and nutmeg in a saucepan. Let the spices steep for 15 minutes after turning off the heat. Whisk egg yolks in a bowl, then mix into the milk while stirring constantly. Heat the mixture until it thickens slightly, then strain to remove spices and curds. Stir in rum or brandy and vanilla extract, then chill it or serve it warm.",
   "url": "https://thestayathomechef.com/wp-content/uploads/2020/09/Old-Fashioned-Homemade-Eggnog-4.jpg"
 },
 
 {
   "category": "Cookie",
+
   "name": "Christmas Coconut Balls",
   "recipe": "To make Hungarian Kokuszgolyo (Coconut Balls), mix dry ingredients like crushed biscuits, sugar, vanilla sugar, cocoa, and a bit of rum essence in a bowl. Add melted butter and coconut milk, then knead until the sugar dissolves. Shape the mixture into small balls, then roll them in shredded coconut. Let them cool in the fridge for a few hours.",
   "url": "https://www.sutimamohr.hu/wp-content/uploads/2019/11/78063863_1883282565149741_6352679556213637120_o.jpg"
@@ -52,6 +55,7 @@ const recipesJSON = [{
 {
   "category": "Snack",
   "name": "Rudolph Rice Krispies",
+
   "recipe": "Melt butter and marshmallows in a saucepan, mix in Rice Krispies, and press the mixture into a greased pan. Let it cool and cut into rectangles. (or use prepackaged Rice Krispies treats). Insert a wooden stick into each treat to create a handle. Melt chocolate in the microwave, stirring until smooth. Use it to draw antlers on the treats. Attach candy eyes and a red candy nose with drops of melted chocolate. Let the treats cool until the chocolate hardens before serving ",
   "Url": "https://www.devourdinner.com/wp-content/uploads/2021/12/Rice-Krispie-Reindeer-Pops_Devour-Dinner-109.jpg"
 },
@@ -59,12 +63,14 @@ const recipesJSON = [{
 {
   "category": "Snack",
   "name": "Grinch-Marshmallow",
+
   "recipe": "To make Grinch Marshmallow Pops, first thread four marshmallows onto a skewer. Melt white candy melts and coat the marshmallows, letting the excess drip off, then allow them to dry. Melt green candy melts and drizzle over the marshmallows, adding heart sprinkles before the candy hardens.",
   "url": "https://www.lovinglivinglancaster.com/wp-content/uploads/2019/11/Grinch-Marshmallow-Pops-Sample-4-2-scaled.jpg.webp"
 },
 
 {
   "Category": "Snack",
+
   "name": "Grinch-Cake Pop",
   "recipe": "To make Grinch Cake Pops, mix crumbled chocolate cake with frosting until it forms a firm batter. Roll it into 1.5-inch balls and set aside. Melt green candy melts and dip cake pop sticks into it, then insert them into the cake balls. Coat the cake balls in the melted candy, scraping off excess, and let them harden. Add a red candy heart to each pop to represent the Grinch's small heart.",
   "url": "https://kathrynskitchenblog.com/grinch-cake-pops/"
@@ -142,6 +148,7 @@ function clearDropdownMenu() {
 
   // itarate all the options and removes them
   options.forEach(option => { option.remove() });
+
 }
 
 //displaying recipes. into form
