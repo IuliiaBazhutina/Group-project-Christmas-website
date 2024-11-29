@@ -53,7 +53,7 @@ const recipesJSON = [{
   "category": "Snack",
   "name": "Rudolph Rice Krispies",
   "recipe": "Melt butter and marshmallows in a saucepan, mix in Rice Krispies, and press the mixture into a greased pan. Let it cool and cut into rectangles. (or use prepackaged Rice Krispies treats). Insert a wooden stick into each treat to create a handle. Melt chocolate in the microwave, stirring until smooth. Use it to draw antlers on the treats. Attach candy eyes and a red candy nose with drops of melted chocolate. Let the treats cool until the chocolate hardens before serving ",
-  "Url": "https://www.devourdinner.com/wp-content/uploads/2021/12/Rice-Krispie-Reindeer-Pops_Devour-Dinner-109.jpg"
+  "url": "https://www.devourdinner.com/wp-content/uploads/2021/12/Rice-Krispie-Reindeer-Pops_Devour-Dinner-109.jpg"
 },
 
 {
@@ -156,10 +156,13 @@ function displayRecipeInForm(recipeName) {
   const titleInput = document.getElementById("title");
   const recipeTextarea = document.getElementById("recipe");
   const recipe = recipes.find(r => r.name === recipeName);
+  const recipeImage = document.getElementById("image-recipe");
 
   if (recipe) {
     titleInput.value = recipe.name;
     recipeTextarea.value = recipe.recipe;
+    recipeImage.src = recipe.url 
+   // recipeImage.alt = recipe.name; To fixed placement for descriptive of image. 
   }
 }
 
