@@ -84,6 +84,11 @@ button {
   margin: 20px auto 10px;
 }
 
+button:hover {
+  background-color: antiquewhite;
+  cursor: pointer;
+}
+
 #countdown {
   color: #e01e1e;
   font-size: larger;
@@ -122,12 +127,6 @@ button {
 #div-select {
   display: grid;
   grid-template-columns: auto 1fr auto 1fr;
-}
-
-#div-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
 }
 
 form {
