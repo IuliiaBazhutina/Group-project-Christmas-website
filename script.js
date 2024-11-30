@@ -26,10 +26,11 @@ let messages = [
     "The ‘X’ in X-Mas, as we all use today, comes from the Greek meaning of ‘X’ i.e. Christ.",
 ],
     msgIndex = 0;
-const cycleMsg = document.getElementById("factBut"),
+const button3 = document.getElementById("button3"),
     msgOutput = document.getElementById("message");
-cycleMsg.addEventListener("click", function () {
-    (msgOutput.textContent = messages[msgIndex]), msgIndex++;
+button3.addEventListener("click", function () {
+    msgOutput.textContent = messages[msgIndex];
+    msgIndex = (msgIndex + 1)% messages.length;
 });
 
 //BUTTON TO GET THE DISTANCE FROM USER TO THE NORTH POLE
