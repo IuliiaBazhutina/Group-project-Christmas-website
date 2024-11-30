@@ -184,8 +184,8 @@ textarea {
   .row {
     flex-direction: column;
   }
-  .navbar a {
-    padding: 5px 5px;
+  .navbar {
+    gap: 0;
   }
   #div-container {
     display: block;
