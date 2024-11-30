@@ -17,21 +17,25 @@ var countDownDate = new Date("December 25, 2024 00:00:00").getTime(),
 //THE FACT OF THE DAY
     const factsJSON = [
         { 
-        "fact": "The image of Santa Claus flying in his sleigh first appeared in 1819", 
+        "fact": "The image of Santa Claus flying in his sleigh first appeared in 1819.", 
         "url": "https://guideposts.org/wp-content/uploads/2022/12/Vintage-colour-lithograph-from-1898-showing-Father-Christmas-and-his-reindeer-flying-through-the-sky-in-the-history-of-Santa-Claus-1024x576.jpg.optimal.jpg",
         },
         { 
-        "fact": "Some zoos take donated Christmas trees and use them as food for the animals", 
+        "fact": "Some zoos take donated Christmas trees and use them as food for the animals.", 
         "url": "https://ichef.bbci.co.uk/news/1024/cpsprodpb/53f4/live/5f0087c0-afd1-11ee-bc2f-cb5579b90709.jpg.webp", 
         },
         { 
-        "fact": "America’s first batch of eggnog was made in the Jamestown settlement in 1607", 
+        "fact": "America’s first batch of eggnog was made in the Jamestown settlement in 1607.", 
         "url": "https://m.media-amazon.com/images/I/511fIDP-9QL._UF1000,1000_QL80_.jpg",
         }, 
         { 
         "fact": "The original Rudolph did not have a red nose.", 
         "url": "https://www.bodminjail.org/media/nwqhpzrb/itsdavidfish_a_tradition_dicnkes.jpg"
         },
+        { 
+        "fact": "Coca-Cola was the first company that used Santa Claus during the winter season for promotion.", 
+        "url": "https://s.hdnux.com/photos/01/23/30/65/21859703/4/rawImage.jpg",
+         }
     ]; 
     const stringJSON = JSON.stringify(factsJSON); 
     const facts = JSON.parse(stringJSON);
