@@ -53,13 +53,24 @@ h1 {
   grid-template-columns: 1fr 1fr;
 }
 .Calender,
+.Recipes{
+  width: 400px;
+  height: auto;
+  padding: 20px 40px;
+  margin: 10px 10px 10px auto;
+  display: block;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 8px;
+}
+
 .Location,
-.Recipes,
 .TipofDay {
   width: 400px;
   height: auto;
   padding: 20px 40px;
-  margin: 10px auto;
+  margin: 10px auto 10px 10px;
   display: block;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -173,6 +184,9 @@ textarea {
   .row {
     flex-direction: column;
   }
+  .navbar {
+    gap: 0;
+  }
   #div-container {
     display: block;
   }
@@ -180,4 +194,10 @@ textarea {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
   }
+  .Calender,
+.Location,
+.Recipes,
+.TipofDay {
+  margin: 10px auto
+}
 }
