@@ -14,24 +14,46 @@ var countDownDate = new Date("December 25, 2024 00:00:00").getTime(),
             " Seconds ";
     }, 1e3);
 
-//ARRAY OF MESSAGES FOR THE FACT OF THE DAY
-let messages = [
-    "The image of Santa Claus flying in his sleigh first appeared in 1819",
-    "The original Rudolph did not have a red nose",
-    "America’s first batch of eggnog was made in the Jamestown settlement in 1607",
-    "Some zoos take donated Christmas trees and use them as food for the animals",
-    "In 1918, the city of Boston received a giant Christmas tree as a gift from the Canadian province of Nova Scotia",
-    "Tinsel was invented in 1610 in Germany and was once made of real silver.",
-    "Christmas might be a public holiday; however, it is not a biblical holy day. The Bible does not say anywhere to keep Christmas as a holy day.",
-    "The ‘X’ in X-Mas, as we all use today, comes from the Greek meaning of ‘X’ i.e. Christ.",
-],
-    msgIndex = 0;
-const button3 = document.getElementById("button3"),
-    msgOutput = document.getElementById("message");
-button3.addEventListener("click", function () {
-    msgOutput.textContent = messages[msgIndex];
-    msgIndex = (msgIndex + 1)% messages.length;
-});
+//THE FACT OF THE DAY
+    const factsJSON = [
+        { 
+        "fact": "The image of Santa Claus flying in his sleigh first appeared in 1819", 
+        "url": "https://guideposts.org/wp-content/uploads/2022/12/Vintage-colour-lithograph-from-1898-showing-Father-Christmas-and-his-reindeer-flying-through-the-sky-in-the-history-of-Santa-Claus-1024x576.jpg.optimal.jpg",
+        },
+        { 
+        "fact": "Some zoos take donated Christmas trees and use them as food for the animals", 
+        "url": "https://ichef.bbci.co.uk/news/1024/cpsprodpb/53f4/live/5f0087c0-afd1-11ee-bc2f-cb5579b90709.jpg.webp", 
+        },
+        { 
+        "fact": "Coca-Cola was the first company that used Santa Claus during the winter season for promotion.", 
+        "url": "https://s.hdnux.com/photos/01/23/30/65/21859703/4/rawImage.jpg",
+        }, 
+        { 
+        "fact": "America’s first batch of eggnog was made in the Jamestown settlement in 1607", 
+        "url": "https://m.media-amazon.com/images/I/511fIDP-9QL._UF1000,1000_QL80_.jpg",
+        }, 
+        { 
+        "fact": "The original Rudolph did not have a red nose.", 
+        "url": "https://www.bodminjail.org/media/nwqhpzrb/itsdavidfish_a_tradition_dicnkes.jpg"
+        }
+    ]; 
+    const stringJSON = JSON.stringify(factsJSON); 
+    const facts = JSON.parse(stringJSON);
+
+    let msgIndex= 0;
+
+    const button3 = document.getElementById("button3");
+    const msgOutput = document.getElementById("message");
+    const factImage = document.getElementById("tipofday-image");
+
+    button3.addEventListener("click", function () {
+    msgOutput.innerHTML = facts[msgIndex].fact;
+    factImage.src = facts[msgIndex].url;
+
+    msgIndex = (msgIndex + 1) % facts.length;
+    });
+
+
 
 //BUTTON TO GET THE DISTANCE FROM USER TO THE NORTH POLE
 const locationButton = document.getElementById("button2");
