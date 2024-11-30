@@ -209,23 +209,3 @@ alert("Recipe saved!");
 const saveButton = document.getElementById("save-btn");
 saveButton.addEventListener("click", saveRecipe);
 
-
-/*  ADDED these features now to be added to page 3.
-
-getting the saved recipes from localStorage
-const savedRecipes = JSON.parse(localStorage.getItem("savedRecipes")) || [];
-
-// selecting the container from where recipes will be displayed
-const recipeList = document.getElementById("recipe-list");
-
-// loop through each saved-recipes and display them
-function displayRecipes() {
-    recipeList.innerHTML = ""; // Clear existing content
-
-//checks to see recipes to display
-    if (savedRecipes.length === 0) {
-        recipeList.innerHTML = "No recipes saved yet!";
-        return;
-    }
-};
-*/
