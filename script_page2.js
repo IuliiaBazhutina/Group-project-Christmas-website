@@ -179,13 +179,12 @@ function displayRecipeInForm(recipeName) {
 
 //added the local storage for saving recipes
 
-const saveButton = document.getElementById("save-btn");
-
-saveButton.addEventListener("click", function(){
+function saveRecipe(){
   const recipeName = document.getElementById("title").value;
   const recipeSteps = document.getElementById("recipe").value;
   const recipeImage = document.getElementById("image-recipe").src;
   const recipeAlt = document.getElementById("image-recipe").alt;
+  const selectCategory = document.getElementById("select-category");
 
   const newRecipe = {
     category: selectCategory.options[selectCategory.selectedIndex].text,
@@ -206,7 +205,10 @@ savedRecipes.push(newRecipe);
 
 localStorage.setItem("savedRecipes", JSON.stringify(savedRecipes));
 alert("Recipe saved!");
-});
+}
+const saveButton = document.getElementById("save-btn");
+saveButton.addEventListener("click", saveRecipe);
+
 
 /*  ADDED these features now to be added to page 3.
 
