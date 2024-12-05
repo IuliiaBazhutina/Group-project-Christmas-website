@@ -48,7 +48,7 @@ function addArticle(name, recipe, image, alt) {
 
     // create a new article
     const article = document.createElement("article");
-    
+
     // create a new title and its content from local storage
     var h2Element = document.createElement('h2');
     h2Element.innerText = name;
@@ -63,10 +63,33 @@ function addArticle(name, recipe, image, alt) {
     var imageElement = document.createElement('img');
     imageElement.src = `${image}`;
     imageElement.alt = `${alt}`;
-    imageElement.style.height = '200px';  
+    imageElement.style.height = '200px';
     article.appendChild(imageElement);
 
     const main = document.getElementById("main");
     main.appendChild(article);
+}
 
+
+
+// once "Clear my recipes" link is clicked function clearRecipes is called
+
+const clearLink = document.getElementById('clear-link');
+clearLink.addEventListener('click', function () { clearRecipes(); })
+
+
+
+// function removes all the articles from the main and creates a new article with a message that there is no saved recipes
+
+function clearRecipes() {
+    localStorage.clear();
+
+    const mainElement = document.querySelector('main');
+
+    const articles = mainElement.querySelectorAll('article');
+
+    articles.forEach(article => article.remove())
+
+    // create a new article with a message, that there is no new posts
+    addArticle("No recipes available", "Click 'Recipes' and choose recipes which you like", "", "");
 }
