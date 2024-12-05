@@ -39,3 +39,34 @@ function displayRecipes() {
         addArticle(name, recipe, image, alt);
     });
 }
+
+
+
+// Function addArticle creates a new article (with <H2>, <P>, and <img> inside) and adds content from parameters
+
+function addArticle(name, recipe, image, alt) {
+
+    // create a new article
+    const article = document.createElement("article");
+    
+    // create a new title and its content from local storage
+    var h2Element = document.createElement('h2');
+    h2Element.innerText = name;
+    article.appendChild(h2Element);
+
+    // create a new paragraph and its content from local storage 
+    var pElement = document.createElement('p');
+    pElement.innerText = recipe;
+    article.appendChild(pElement);
+
+    // create a new image and its content from local storage 
+    var imageElement = document.createElement('img');
+    imageElement.src = `${image}`;
+    imageElement.alt = `${alt}`;
+    imageElement.style.height = '200px';  
+    article.appendChild(imageElement);
+
+    const main = document.getElementById("main");
+    main.appendChild(article);
+
+}
