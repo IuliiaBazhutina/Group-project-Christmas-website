@@ -1,4 +1,7 @@
+
 checkLocalStorage();
+
+
 
 // function checkLocalStorage calls function displayRecipes if any savedRecipes are available in the local storage
 // If there is no available savedRecipes the function creates an article with a message that there is no recipes
@@ -14,4 +17,25 @@ function checkLocalStorage() {
     else {
         displayRecipes();
     }
+}
+
+
+
+// Function displayRecipes retrieves savedRecipes from the local storage, and calls addArticle to create a new article for every recipe
+
+function displayRecipes() {
+
+    //retrieve savedRecipes from local storage and convert them to array of objects
+    const recipes = JSON.parse(localStorage.getItem("savedRecipes") || "[]");
+
+    //get value of name, description, image and alt for every recipe
+    recipes.forEach(element => {
+        let name = element.name;
+        let recipe = element.recipe;
+        let image = element.url;
+        let alt = element.alt;
+
+        // pass title, content and image as parameters to create a new article with content
+        addArticle(name, recipe, image, alt);
+    });
 }
