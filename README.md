@@ -32,8 +32,6 @@ Once a user clicks the button “View My recipes” the page My recipes (page3.h
 On the page My recipes (page3.html) a user can see all the saved recipes. 
 
 Once the page My recipes is loaded a user can see all the recipes saved in the local storage.
-If there is no recipes saved in the local storage a user will see a message, that there is no saved recipes.
+If there are no recipes saved in the local storage a user will see a message, that there are no saved recipes.
 
-To remove all the saved recipes a user should click a link "Clear my recipes". After that, the user will see a message, that there is no saved recipes.
-
-
+To remove all the saved recipes a user should click a link "Clear my recipes". After that, the user will see a message, that there are no saved recipes.
