@@ -1,10 +1,10 @@
 # Group-project-Christmas-website
 
-Christmas website will have 3 pages: Christmas website (Home), Recipes, My recipes. Home and Recipes and features for them have been implemented.  
+Christmas website has 3 pages: Christmas website (Home), Recipes, My recipes. All the pages have been implemented.  
 
 
 
-On the page Christmas website (index.html) you can see 4 sections: 
+On the page Christmas website (index.html) a user can see 4 sections: 
 
 Section 1: Christmas countdown calendar. It shows how many days, hours, minutes and seconds until Christmas (December 25th). 
 
@@ -23,10 +23,17 @@ Select category: A user can choose a recipe category from the dropdown list. Onc
 Select recipe: A user can choose a recipe from the dropdown list. Once the recipe is chosen, a function displays the recipe’s name, description, and image in the form. 
 
 A users can change the name and description of the recipe. 
-Once a user clicks the button “Save” the recipe with changes will be saved to the local storage. 
+Once a user clicks the button “Save” the recipe with changes will be saved to the local storage. A user can save several recipes.
 
-The button “View my recipes” will link to page 3 (My recipes), this page hasn’t been added yet. 
+Once a user clicks the button “View My recipes” the page My recipes (page3.html) will be loaded. 
 
- 
 
-On the page My recipes a user will see all the saved recipes. 
+
+On the page My recipes (page3.html) a user can see all the saved recipes. 
+
+Once the page My recipes is loaded a user can see all the recipes saved in the local storage.
+If there is no recipes saved in the local storage a user will see a message, that there is no saved recipes.
+
+To remove all the saved recipes a user should click a link "Clear my recipes". After that, the user will see a message, that there is no saved recipes.
+
+
