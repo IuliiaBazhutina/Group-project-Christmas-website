@@ -169,6 +169,11 @@ article{
   font-family: Arial;
   background-color: white;
 }
+#footerPage3{
+  position: fixed;
+  bottom: 0;
+width: 100%;
+}
 @media screen and (max-width: 700px) {
   h1 {
     font-size: 1.5rem;
