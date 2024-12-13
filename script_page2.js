@@ -207,5 +207,7 @@ localStorage.setItem("savedRecipes", JSON.stringify(savedRecipes));
 alert("Recipe saved!");
 }
 const saveButton = document.getElementById("save-btn");
-saveButton.addEventListener("click", saveRecipe);
+saveButton.addEventListener("click", function() {saveRecipe()});
 
+const viewButton = document.getElementById("view-btn");
+viewButton.addEventListener("click", function() {window.location.href = './page3.html'})

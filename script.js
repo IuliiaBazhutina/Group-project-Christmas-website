@@ -54,6 +54,9 @@ var countDownDate = new Date("December 25, 2024 00:00:00").getTime(),
     });
 
 
+const button1 = document.getElementById("button1");
+button1.addEventListener("click", function() {window.location.href = './page2.html'});
+
 
 //BUTTON TO GET THE DISTANCE FROM USER TO THE NORTH POLE
 const locationButton = document.getElementById("button2");
@@ -70,6 +73,6 @@ function showPosition(e) {
     t.innerHTML = `Your distance from the North Pole is: ${(
         (90 - o) *
         111.32
-    ).toFixed(3)} kilometers!`;
+    ).toFixed(0)} kilometers!`;
 }
 locationButton.addEventListener("click", getLocation);

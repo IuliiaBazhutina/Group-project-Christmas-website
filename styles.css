@@ -6,7 +6,6 @@ h1 {
 .page1 {
   justify-content: center;
 }
-*,
 button {
   font-family: cursive;
 }
@@ -22,6 +21,9 @@ body {
   background-position: center center;
   background-attachment: fixed;
   color: #000;
+}
+#bodyPage3{
+  padding: 0 0 90px 0;
 }
 header {
   text-align: center;
@@ -88,6 +90,7 @@ button {
   font-size: 14px;
   border-radius: 50px;
   cursor: pointer;
+  text-decoration:none;
 }
 button:hover {
   background-color: #00a700;
@@ -161,6 +164,19 @@ textarea {
 #image-recipe {
   width: 100%;
   height: auto;
+}
+article{
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial;
+  background-color: white;
+}
+#footerPage3{
+  position: fixed;
+  bottom: 0;
+width: 100%;
 }
 @media screen and (max-width: 700px) {
   h1 {
