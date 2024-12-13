@@ -22,9 +22,6 @@ body {
   background-attachment: fixed;
   color: #000;
 }
-#bodyPage3{
-  padding: 0 0 90px 0;
-}
 header {
   text-align: center;
   border-bottom: 4px solid #fb7676;
@@ -90,7 +87,6 @@ button {
   font-size: 14px;
   border-radius: 50px;
   cursor: pointer;
-  text-decoration:none;
 }
 button:hover {
   background-color: #00a700;
@@ -177,6 +173,9 @@ article{
   position: fixed;
   bottom: 0;
 width: 100%;
+}
+#bodyPage3{
+  padding: 0 0 90px 0;
 }
 @media screen and (max-width: 700px) {
   h1 {
