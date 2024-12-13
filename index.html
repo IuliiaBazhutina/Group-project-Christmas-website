@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>CHRISTMAS WEBSITE</h1>
+
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <a href="./index.html">Home</a>
+            <a href="./page2.html">Recipes</a>
+        </div>
+    </header>
+
+
+    <div class="page1">
+
+        <!--Count-down calender-->
+        <div class="Calender">
+            <h2>Christmas Countdown Calendar</h2>
+
+            <p id="countdown"> </p>
+            <p>Until CHRISTMAS December 25, 2024</p>
+
+            <img id='countdown-image'
+                src="https://img.freepik.com/premium-vector/christmas-progress-bar-with-inscription-christmas-loading-sketch-vector-illustration-design_785169-17.jpg?w=1060">
+
+        </div>
+
+
+        <!--The tip of the day-->
+        <div class="TipofDay">
+            <h2>Christmas Facts</h2>
+            <p id="message">Coca-Cola was the first company that used Santa Claus during the winter season for
+                promotion.</p>
+            <image id='tipofday-image' src="https://s.hdnux.com/photos/01/23/30/65/21859703/4/rawImage.jpg">
+                <button id="button3">Next fact</button>
+
+        </div>
+
+
+        <!--Link to recipes-->
+        <div class="Recipes">
+            <h2>Our Christmas Recipes</h2>
+
+            <p>Do you want to cook something festive?</p>
+
+            <img id='recipe-image' src="https://clipart-library.com/2023/ce9beff291ad6800202be28f515b4b88.jpg"
+                alt="Sometype of desert">
+            <button id="button1">Find Our Recipes</button></a>
+        </div>
+
+
+        <!--G.P.S Location-->
+        <div class="Location">
+            <h2>How Far Are You From<br> The North Pole?</h2>
+            <p id="location">Let's Find Santa</p>
+
+            <img id='location-image'
+                src="https://play-lh.googleusercontent.com/7bYTP2VFFZlcmxBhA252OqX1J9wM5TE8NMop-_1-mB3d579epV6fAMkGsLlTPEdEKAY">
+            <button id="button2" onclick="getLocation()">Find Out</button>
+
+
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Merry Christmas and Happy Hoildays!<br>&copy; 2024 Group 10</p>
+    </footer>
+
+</body>
+
+
+</html>
