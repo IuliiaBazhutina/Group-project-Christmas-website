@@ -1,8 +1,9 @@
 # Group-project-Christmas-website
 
+Short video showcasing our Website 
+[![Watch the video](https://img.youtube.com/vi/qNORDdNGO0U/0.jpg)](https://www.youtube.com/watch?v=qNORDdNGO0U)
+
 Christmas website has 3 pages: Christmas website (Home), Recipes, My recipes. All the pages have been implemented.  
-
-
 
 On the page Christmas website (index.html) a user can see 4 sections: 
 
