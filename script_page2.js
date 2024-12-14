@@ -75,7 +75,7 @@ const recipesJSON = [{
 {
   "category": "Snack",
   "name": "Grinch-Cake Pop",
-  "recipe": "To make Grinch Cake Pops, mix crumbled chocolate cake with frosting until it forms a firm batter. Roll it into 1.5-inch balls and set aside. Melt green candy melts and dip cake pop sticks into it, then insert them into the cake balls. Coat the cake balls in the melted candy, scraping off excess, and let them harden. Add a red candy heart to each pop to represent the Grinch's small heart.", 
+  "recipe": "To make Grinch Cake Pops, mix crumbled chocolate cake with frosting until it forms a firm batter. Roll it into 1.5-inch balls and set aside. Melt green candy melts and dip cake pop sticks into it, then insert them into the cake balls. Coat the cake balls in the melted candy, scraping off excess, and let them harden. Add a red candy heart to each pop to represent the Grinch's small heart.",
   "url": "https://kathrynskitchenblog.com/wp-content/uploads/2023/10/Grinch-Cake-Pops-14.jpg",
   "alt": "Green cake pop with a heart shaped candy on it"
 }
@@ -158,10 +158,10 @@ function clearDropdownMenu() {
 //displaying recipes. into form
 
 const selectRecipe = document.getElementById("select-recipe");
-selectRecipe.addEventListener("change", function (){
+selectRecipe.addEventListener("change", function () {
   const selectedRecipeName = selectRecipe.options[selectRecipe.selectedIndex].text;
   displayRecipeInForm(selectedRecipeName);
-}); 
+});
 
 function displayRecipeInForm(recipeName) {
   const titleInput = document.getElementById("title");
@@ -172,14 +172,14 @@ function displayRecipeInForm(recipeName) {
   if (recipe) {
     titleInput.value = recipe.name;
     recipeTextarea.value = recipe.recipe;
-    recipeImage.src = recipe.url 
-    recipeImage.alt = recipe.name; 
+    recipeImage.src = recipe.url
+    recipeImage.alt = recipe.name;
   }
 }
 
 //added the local storage for saving recipes
 
-function saveRecipe(){
+function saveRecipe() {
   const recipeName = document.getElementById("title").value;
   const recipeSteps = document.getElementById("recipe").value;
   const recipeImage = document.getElementById("image-recipe").src;
@@ -192,22 +192,28 @@ function saveRecipe(){
     recipe: recipeSteps,
     url: recipeImage,
     alt: recipeAlt
-};
+  };
 
-if (!recipeName || !recipeSteps) {
-  alert("Please fill in all fields before saving.");
-  return;
-}
+  if (!recipeName || !recipeSteps) {
+    alert("Please fill in all fields before saving.");
+    return;
+  }
 
-const savedRecipes = JSON.parse(localStorage.getItem("savedRecipes")) || [];
+  const savedRecipes = JSON.parse(localStorage.getItem("savedRecipes")) || [];
 
-savedRecipes.push(newRecipe);
+  savedRecipes.push(newRecipe);
 
-localStorage.setItem("savedRecipes", JSON.stringify(savedRecipes));
-alert("Recipe saved!");
+  localStorage.setItem("savedRecipes", JSON.stringify(savedRecipes));
+  alert("Recipe saved!");
+
+  const form = document.getElementById('form');
+  form.reset();
 }
 const saveButton = document.getElementById("save-btn");
-saveButton.addEventListener("click", function() {saveRecipe()});
+saveButton.addEventListener("click", function (event) {
+  event.preventDefault();
+  saveRecipe()
+});
 
 const viewButton = document.getElementById("view-btn");
-viewButton.addEventListener("click", function() {window.location.href = './page3.html'})
+viewButton.addEventListener("click", function () { window.location.href = './page3.html' })
