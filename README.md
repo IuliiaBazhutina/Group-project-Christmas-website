@@ -1,5 +1,7 @@
 # Group-project-Christmas-website
 
+[![Watch the video](https://img.youtube.com/vi/https://youtu.be/qNORDdNGO0U/0.jpg)](https://www.youtube.com/watch?v=https://youtu.be/qNORDdNGO0U)
+
 Christmas website has 3 pages: Christmas website (Home), Recipes, My recipes. All the pages have been implemented.  
 
 
