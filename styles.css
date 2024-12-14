@@ -13,12 +13,12 @@ button {
 }
 
 body {
-  padding: 0;
   background-color: bisque;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
   color: #000;
+  padding: 0 0 90px 0;
 }
 
 header {
@@ -194,11 +194,6 @@ article {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   font-family: Arial;
   background-color: white;
-}
-
-#bodyPage3,
-#bodyPage2 {
-  padding: 0 0 90px 0;
 }
 
 @media screen and (max-width: 700px) {
