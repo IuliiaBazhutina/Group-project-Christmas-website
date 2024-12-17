@@ -1,7 +1,15 @@
-# Group-project-Christmas-website
+# **Group-Project: Christmas Website**  
+---
+## **Short Video Showcasing Our Website**  
 
-Short video showcasing our Website 
-[![Watch the video](https://img.youtube.com/vi/qNORDdNGO0U/0.jpg)](https://www.youtube.com/watch?v=qNORDdNGO0U)
+[![Watch the video](https://img.youtube.com/vi/4ilDSuqqBis/0.jpg)](https://www.youtube.com/watch?v=4ilDSuqqBis)  
+--
+## [**Check Out the Project Here!**](https://github.com/users/IuliiaBazhutina/projects/2)  
+---
+
+The Christmas website offers fun Christmas trivia, a delightful Christmas recipe book, and festive ideas to make your holiday season special! This website is perfect for people of all ages who love Christmas and want to enjoy the joy, creativity, and traditions of the season.
+
+Our only dependencies for our site would have to be, “how far are you from the north pole?”. To provide you with an accurate distance, we need access to your current location via your device's. This allows us to calculate and display the distance from your position to the North Pole.
 
 Christmas website has 3 pages: Christmas website (Home), Recipes, My recipes. All the pages have been implemented.  
 
@@ -14,8 +22,6 @@ Section 2: Christmas facts. This section shows one fact about Christmas and a pi
 Section 3: Christmas recipes. Button “View recipes” links to the page2.html, Christmas recipes. 
 
 Section 4: How far are you from the North Pole. When a user clicks the button “Find Out”, the function gets the user’s location and calculates how far it’s from the North Pole. 
-
-
  
 On the page Christmas Recipes (page2.html) a user can see a form to view, change and save recipes. 
 
