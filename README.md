@@ -7,8 +7,11 @@
 ## Short Overview of Our Website
 [![Watch the video](https://img.youtube.com/vi/qNORDdNGO0U/0.jpg)](https://www.youtube.com/watch?v=qNORDdNGO0U)
 
-## [**Check Out the Project Here!**](https://github.com/users/IuliiaBazhutina/projects/2)  
+## [**Check Out the Project board Here!**](https://github.com/users/IuliiaBazhutina/projects/2)  
 ---
+## Collaborations per team member
+![Defined Roles](https://i.ibb.co/YLh2JYt/roles.jpg)
+
 
 The Christmas website offers fun Christmas trivia, a delightful Christmas recipe book, and festive ideas to make your holiday season special! This website is perfect for people of all ages who love Christmas and want to enjoy the joy, creativity, and traditions of the season.
 
@@ -43,3 +46,5 @@ Once the page My recipes is loaded a user can see all the recipes saved in the l
 If there are no recipes saved in the local storage a user will see a message, that there are no saved recipes.
 
 To remove all the saved recipes a user should click a link "**Clear my recipes**". After that, the user will see a message, that there are no saved recipes.
+
+
